@@ -54,7 +54,7 @@
   "name": "extendable-media-recorder-wav-encoder",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chrisguttandin/extendable-media-recorder.git"
+    "url": "https://github.com/chrisguttandin/extendable-media-recorder-wav-encode.git"
   },
   "scripts": {
     "precommit": "grunt lint",
