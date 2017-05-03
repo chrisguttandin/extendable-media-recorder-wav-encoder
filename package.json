@@ -45,12 +45,13 @@
   "files": [
     "build/es5/",
     "build/es2015/",
+    "build/esm/",
     "src/"
   ],
   "homepage": "https://github.com/chrisguttandin/extendable-media-recorder-wav-encoder",
   "license": "MIT",
   "main": "build/es5/bundle.js",
-  "module": "build/es2015/module.js",
+  "module": "build/esm/module.js",
   "name": "extendable-media-recorder-wav-encoder",
   "repository": {
     "type": "git",
