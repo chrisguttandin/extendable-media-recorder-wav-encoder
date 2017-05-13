@@ -29,8 +29,8 @@ describe('module', () => {
                 // Test if the arrayBuffer is decodable.
                 .then((arrayBuffer) => audioContext.decodeAudioData(arrayBuffer))
                 .then((audioBuffer) => {
-                    // Test if the audioBuffer is about one second long.
-                    expect(audioBuffer.duration).to.closeTo(1, 0.3);
+                    // Test if the audioBuffer is at least half a second long.
+                    expect(audioBuffer.duration).to.above(0.5);
 
                     done();
                 })
