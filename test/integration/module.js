@@ -28,7 +28,12 @@ describe('module', () => {
                 .stop()
                 // Test if the arrayBuffer is decodable.
                 .then((arrayBuffer) => audioContext.decodeAudioData(arrayBuffer))
-                .then(() => done());
+                .then((audioBuffer) => {
+                    // Test if the audioBuffer is about one second long.
+                    expect(audioBuffer.duration).to.closeTo(1, 0.3);
+
+                    done();
+                });
         }, 1000);
     });
 
