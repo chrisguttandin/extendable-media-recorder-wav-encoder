@@ -33,7 +33,8 @@ describe('module', () => {
                     expect(audioBuffer.duration).to.closeTo(1, 0.3);
 
                     done();
-                });
+                })
+                .catch((err) => done(err));
         }, 1000);
     });
 
