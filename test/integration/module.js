@@ -29,7 +29,7 @@ describe('module', () => {
     });
 
     it('should encode a mediaStream', function (done) {
-        this.timeout(5000);
+        this.timeout(10000);
 
         const wavRecorder = wavEncoder.start(mediaStream);
 
