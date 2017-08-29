@@ -4,7 +4,6 @@
     "url": "https://github.com/chrisguttandin/extendable-media-recorder-wav-encoder/issues"
   },
   "dependencies": {
-    "babel-plugin-external-helpers": "^6.22.0",
     "extendable-media-recorder-wav-encoder-broker": "^2.0.22",
     "extendable-media-recorder-wav-encoder-worker": "^2.0.3",
     "tslint": "^5.7.0"
@@ -12,6 +11,7 @@
   "description": "A Wave file encoder for the extendable-media-recorder package.",
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-es2015": "^6.18.0",
     "chai": "^4.1.1",
     "eslint-config-holy-grail": "^19.0.1",
