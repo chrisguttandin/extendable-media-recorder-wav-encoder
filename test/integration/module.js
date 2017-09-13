@@ -1,4 +1,4 @@
-import { wavEncoder } from '../../src/module';
+import { wavEncoder } from '../../src/module';
 
 describe('module', () => {
 
