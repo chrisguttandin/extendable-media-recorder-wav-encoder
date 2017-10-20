@@ -8,7 +8,9 @@ describe('module', () => {
 
     afterEach(() => audioContext.close());
 
-    beforeEach((done) => {
+    beforeEach(function (done) {
+        this.timeout(3000);
+
         audioContext = new AudioContext();
 
         frequency = 441;
@@ -25,7 +27,7 @@ describe('module', () => {
         mediaStream = mediaStreamDestination.stream;
 
         // Wait a second before starting the recording.
-        setTimeout(done, 1000);
+        setTimeout(done, 2000);
     });
 
     it('should encode a mediaStream', function (done) {
