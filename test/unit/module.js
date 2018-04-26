@@ -1,9 +1,47 @@
-import { wavEncoder } from '../../src/module';
+import { connect, disconnect } from '../../src/module';
 
 describe('module', () => {
 
-    it('should export the wavEncoder', () => {
-        expect(wavEncoder).to.be.an('object');
+    describe('characterize()', () => {
+
+        // @todo
+
+    });
+
+    describe('connect()', () => {
+
+        it('should connect a port', () => {
+            return connect()
+                .then((port) => {
+                    expect(port).to.be.an.instanceOf(MessagePort);
+                });
+        });
+
+    });
+
+    describe('disconnect()', () => {
+
+        let port;
+
+        beforeEach(() => connect()
+            .then((prt) => port = prt));
+
+        it('should disconnect a port', () => {
+            return disconnect(port);
+        });
+
+    });
+
+    describe('encode()', () => {
+
+        // @todo
+
+    });
+
+    describe('record()', () => {
+
+        // @todo
+
     });
 
 });
