@@ -17,3 +17,5 @@ export const encode = extendableMediaRecorderWavEncoder.encode;
 
 // @todo TypeScript v2.9.2 requires record to have an explicit type.
 export const record: IExtendableMediaRecorderWavEncoderBrokerDefinition['record'] = extendableMediaRecorderWavEncoder.record;
+
+URL.revokeObjectURL(url);
