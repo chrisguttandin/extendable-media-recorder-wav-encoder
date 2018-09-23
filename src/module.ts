@@ -15,6 +15,8 @@ export const disconnect = extendableMediaRecorderWavEncoder.disconnect;
 
 export const encode = extendableMediaRecorderWavEncoder.encode;
 
+export const isSupported = extendableMediaRecorderWavEncoder.isSupported;
+
 export const record = extendableMediaRecorderWavEncoder.record;
 
 URL.revokeObjectURL(url);
