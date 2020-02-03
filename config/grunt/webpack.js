@@ -4,7 +4,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 module.exports = {
     default: {
         entry: {
-            worker: './node_modules/extendable-media-recorder-wav-encoder-worker/build/es2018/module.js'
+            worker: './node_modules/extendable-media-recorder-wav-encoder-worker/build/es2019/module.js'
         },
         mode: 'production',
         module: {
