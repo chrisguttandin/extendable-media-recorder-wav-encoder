@@ -85,7 +85,7 @@ module.exports = (config) => {
                     browser: 'chrome',
                     captureTimeout: 300,
                     os: 'OS X',
-                    os_version: 'Mojave' // eslint-disable-line camelcase
+                    os_version: 'Big Sur' // eslint-disable-line camelcase
                 },
                 FirefoxBrowserStack: {
                     base: 'BrowserStack',
@@ -99,7 +99,7 @@ module.exports = (config) => {
                     browser: 'safari',
                     captureTimeout: 300,
                     os: 'OS X',
-                    os_version: 'Mojave' // eslint-disable-line camelcase
+                    os_version: 'Big Sur' // eslint-disable-line camelcase
                 }
             }
         });
