@@ -43,7 +43,7 @@
         "karma-firefox-launcher": "^2.1.0",
         "karma-mocha": "^2.0.1",
         "karma-sinon-chai": "^2.0.2",
-        "karma-webpack": "^4.0.2",
+        "karma-webpack": "^5.0.0",
         "load-grunt-config": "^3.0.1",
         "memfs": "^3.2.0",
         "mocha": "^8.3.0",
