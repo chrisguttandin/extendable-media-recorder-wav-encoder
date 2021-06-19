@@ -66,12 +66,6 @@
         "src/"
     ],
     "homepage": "https://github.com/chrisguttandin/extendable-media-recorder-wav-encoder",
-    "husky": {
-        "hooks": {
-            "commit-msg": "commitlint --edit --extends @commitlint/config-angular",
-            "pre-commit": "pretty-quick --config config/prettier/config.json --staged && grunt lint"
-        }
-    },
     "license": "MIT",
     "main": "build/es5/bundle.js",
     "module": "build/es2019/module.js",
@@ -81,6 +75,7 @@
         "url": "https://github.com/chrisguttandin/extendable-media-recorder-wav-encoder.git"
     },
     "scripts": {
+        "prepare": "husky install",
         "prepublishOnly": "grunt build",
         "test": "grunt lint && grunt test"
     },
