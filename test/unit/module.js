@@ -1,7 +1,9 @@
+import { beforeEach, describe, expect, it } from 'vitest';
 import { connect, disconnect, isSupported } from '../../src/module';
 
 describe('module', () => {
-    describe('characterize()', () => {
+    describe('characterize()', ({ skip }) => {
+        skip();
         // @todo
     });
 
@@ -23,7 +25,8 @@ describe('module', () => {
         });
     });
 
-    describe('encode()', () => {
+    describe('encode()', ({ skip }) => {
+        skip();
         // @todo
     });
 
@@ -33,7 +36,8 @@ describe('module', () => {
         });
     });
 
-    describe('record()', () => {
+    describe('record()', ({ skip }) => {
+        skip();
         // @todo
     });
 });
